@@ -14,3 +14,4 @@ Print the image marker ImageTargetBananas.pdf
 After launching the app, point the camera to the printed image marker and interact with the on-screen buttons. 
 
 Note: Using the Android emulator will not give you the best experience as some functionality can't be correctly emulated. 
+Have fun
