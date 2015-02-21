@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ###########################################################################
+Aisiom Augmented Reality Project
+Bright Onapito | 2013
+
+Manifest File for Aisiom AR Application
+     ############################################################################ -->
+     
+     
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onabright.aisiomar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <!-- ********************************************************** -->
+    <!-- Application permissions for Aisiom AR -->
+    <!-- Camera Feature and Permission -->
+     <uses-feature android:name="android.hardware.camera" />
+     <uses-permission android:name="android.permission.CAMERA" />
+     
+     <!-- Network/Sockets and Internet Permissions -->
+     <uses-permission android:name="android.permission.INTERNET"/>
+     
+     <!-- Checking network state Permissions -->
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+       <!-- WLAN MAC Address Permissions -->
+      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+      
+      <!-- Get access to Phone hardware Permissions -->
+       <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+     <!-- ******************************************************** -->
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AisiomTheme" >
+        
+         <!-- OnabrightWare Splash Activity -->
+        <activity
+            android:name="com.onabright.aisiomar.OnabrightSplash" >
+            
+            <!-- android:label attribute removed -->
+      
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <!-- AisiomSplashAR Activity -->
+        <activity
+            android:name="com.onabright.aisiomar.AisiomSplashAR" 
+            />
+             <!-- android:label attribute removed -->
+             
+             
+               <!-- AboutAsisiomAR Activity -->
+        <activity
+            android:name="com.onabright.aisiomar.AboutAisiomAR" 
+            />
+             <!-- android:label attribute removed -->
+            
+        
+         <!-- Main Activity -->
+        <activity
+            android:name="com.onabright.aisiomar.AisiomLaunchAR" />
+         <!-- android:label attribute removed -->
+            
+        
+    </application>
+
+</manifest>
