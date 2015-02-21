@@ -10,7 +10,7 @@ d)Java SDK 7
 
 #Deployment
 To run the the app on your Android device, install the AisiomAR.apk (make sure you have correct security permission in your settings).
-Print the image marker ImageTargetBananas.pdf
+Print the image marker ImageTargetBananas.pdf (in the assets folder).
 After launching the app, point the camera to the printed image marker and interact with the on-screen buttons. 
 
 Note: Using the Android emulator will not give you the best experience as some functionality can't be correctly emulated. 
